@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
   int i=-1,n=0,p=2,x=6;
-  vector<int> v ={};// {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  vector<int> v = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
   SinglyLinkedList s(v,i);
   s.print();
   if(s.empty())cout<<"empty"<<endl;
@@ -28,7 +28,7 @@ int main() {
   s.erase(erase_node);
   s.print();
   i=5;
-  ListNode *insert_node=s.GetIthPointer(i);
+  ListNode *insert_node=s.GetIthPointer(i); //positions of nodes in list is taken as: 1,2,3...  
   s.insert_after(insert_node,x);
   s.print();
   return EXIT_SUCCESS;
