@@ -14,7 +14,7 @@ class SinglyLinkedList {
 public:
   SinglyLinkedList();
   SinglyLinkedList(const std::vector<int> &inputs, int i);
-  ~SinglyLinkedList() { } // destructor, cleans up
+  ~SinglyLinkedList(); // destructor, cleans up
   bool empty();
   int size();
   void push_back(int i); // inserts at the back

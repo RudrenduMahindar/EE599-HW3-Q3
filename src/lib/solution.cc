@@ -3,6 +3,17 @@
 #include <iostream>
 using namespace std;
 
+SinglyLinkedList::~SinglyLinkedList() 
+{
+    ListNode* temp=nullptr;
+    while(head_!=nullptr)
+    {
+        temp=head_;
+        delete temp;
+        head_=head_->next;
+    }
+}
+
 int SinglyLinkedList::size()
 {
     ListNode* ptr=head_;
